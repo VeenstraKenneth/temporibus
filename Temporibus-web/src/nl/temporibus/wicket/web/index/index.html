@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:extend>
+		<div class="contentBox">
+			<h1>Welcome</h1>
+			<p>Met Ultimod is het mogelijk om met een simpele zoekactie
+				scholen in het primair en voortgezet onderwijs te vinden.</p>
+			<p>Door uw postcode of stad in te vullen en op enter te drukken
+				kunt U zien welke scholen er in de buurt van uw locatie zijn.</p>
+			<p></p>
+			<div class="feedback" wicket:id="feedback"></div>
+			<form wicket:id="searchForm">
+				<input type="submit" value="Do it!" style="visibility: hidden;" />
+				<p>
+					<input class="searchBox" wicket:id="searchValue"
+						placeholder="Zoeken" />
+				</p>
+			</form>
+		</div>
+	</wicket:extend>
+</body>
+</html>
